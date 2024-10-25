@@ -17,8 +17,18 @@ module.exports = [
           allow: ['^.*/eslint(\\.base)?\\.config\\.[cm]?js$'],
           depConstraints: [
             {
-              sourceTag: '*',
-              onlyDependOnLibsWithTags: ['*'],
+              sourceTag: 'type:app',
+              onlyDependOnLibsWithTags: [
+                'type:feature',
+                'type:core',
+                'type:auth',
+                'type:ui',
+                'type:data-access',
+                'type:store',
+              ],
+            },
+            {
+              sourceTag: 'type:',
             },
           ],
         },

@@ -1,28 +1,28 @@
 {
-  "name": "admins",
+  "name": "customer",
   "$schema": "../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "admins/src",
+  "sourceRoot": "customer/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/admins",
-        "index": "admins/src/index.html",
-        "browser": "admins/src/main.ts",
+        "outputPath": "dist/customer",
+        "index": "customer/src/index.html",
+        "browser": "customer/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "admins/tsconfig.app.json",
+        "tsConfig": "customer/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
           {
             "glob": "**/*",
-            "input": "admins/public"
+            "input": "customer/public"
           }
         ],
-        "styles": ["admins/src/styles.scss"],
+        "styles": ["customer/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -53,10 +53,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "admins:build:production"
+          "buildTarget": "customer:build:production"
         },
         "development": {
-          "buildTarget": "admins:build:development"
+          "buildTarget": "customer:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -64,7 +64,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "admins:build"
+        "buildTarget": "customer:build"
       }
     },
     "lint": {
@@ -74,15 +74,15 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "admins/jest.config.ts"
+        "jestConfig": "customer/jest.config.ts"
       }
     },
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "admins:build",
-        "port": 4200,
-        "staticFilePath": "dist/admins/browser",
+        "buildTarget": "customer:build",
+        "port": 4300,
+        "staticFilePath": "dist/customer/browser",
         "spa": true
       }
     }
