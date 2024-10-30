@@ -28,6 +28,10 @@
 3. npx nx build owners
 4. npx nx build admins
 
+## Generate libraries
+
+- `npx nx g @nrwl/angular:library --name=example --directory=example/example --tags=scope:example,type:example `
+
 ## Requirements
 
 ## Requirements
@@ -39,10 +43,10 @@
 ```
 ├── libs
 │   ├──features
-│   │   ├──
-│   │   ├──
-│   │   ├──
-│   │   ├──
+│   │   ├── admin-delivery-features
+│   │   ├── customer-delivery-features
+│   │   ├── owner-delivery-features
+│   │   ├── user-delivery-features
 │   ├── auth
 │   │   ├── data-access
 │   │   ├── feature-auth
@@ -54,8 +58,14 @@
 │   ├── data-acess
 │   │   ├──api-types
 │   │   ├──
-│   ├── ui
+│   ├── data-acess
+|   ├── store
+|   |   ├── store-delivery-owner
+|   |   ├── store-delivery-user
+|   |   ├── store-delivery-admin
+|   |   ├── store-delivery-customer
+│   ├── shared
 │   │   ├── components
-        ├── layouts
+|   |   ├── ui-layout
 
 ```
