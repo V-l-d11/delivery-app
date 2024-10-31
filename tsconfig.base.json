@@ -15,9 +15,21 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@deliv-app/api-types-admins": [
+        "libs/core/api-types-admins/src/index.ts"
+      ],
+      "@deliv-app/api-types-base": ["libs/core/api-types-base/src/index.ts"],
+      "@deliv-app/api-types-customers": [
+        "libs/core/api-types-customers/src/index.ts"
+      ],
+      "@deliv-app/api-types-owners": [
+        "libs/core/api-types-owners/src/index.ts"
+      ],
+      "@deliv-app/api-types-users": ["libs/core/api-types-users/src/index.ts"],
       "@deliv-app/auth-data-access": ["libs/auth/data-access/src/index.ts"],
       "@deliv-app/auth-feature": ["auth/src/index.ts"],
       "@deliv-app/data-access": ["libs/src/index.ts"],
+      "@deliv-app/error-handlers": ["libs/core/error-handlers/src/index.ts"],
       "@deliv-app/ui-components": ["shared/src/index.ts"],
       "@deliv-app/ui-layout": ["shared/components/src/index.ts"]
     }

@@ -32,6 +32,10 @@
 
 - `npx nx g @nrwl/angular:library --name=example --directory=example/example --tags=scope:example,type:example `
 
+# Generate components into libs
+
+- `npx nx g @nrwl/angular:component ui-h3 --verbose`
+
 ## Requirements
 
 ## Requirements
@@ -51,14 +55,13 @@
 │   │   ├── data-access
 │   │   ├── feature-auth
 │   ├── core
-│   │   ├── api-types
+│   │   ├── api-types-users
+│   │   ├── api-types-owners
+│   │   ├── api-types-customers
+│   │   ├── api-types-admins
 │   │   ├── error-handler
-│   │   ├── http-client
-│   │   ├── forms
 │   ├── data-acess
-│   │   ├──api-types
-│   │   ├──
-│   ├── data-acess
+│   │   ├──http-client
 |   ├── store
 |   |   ├── store-delivery-owner
 |   |   ├── store-delivery-user
@@ -66,6 +69,11 @@
 |   |   ├── store-delivery-customer
 │   ├── shared
 │   │   ├── components
+│   │   |   ├── ui-h1
+│   │   |   ├── ui-h2
+│   │   |   ├── ui-h3
+│   │   |   ├── ui-button
+│   │   |   ├── ui-icon
 |   |   ├── ui-layout
 
 ```
