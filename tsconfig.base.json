@@ -31,7 +31,10 @@
       "@deliv-app/data-access": ["libs/src/index.ts"],
       "@deliv-app/error-handlers": ["libs/core/error-handlers/src/index.ts"],
       "@deliv-app/ui-components": ["shared/src/index.ts"],
-      "@deliv-app/ui-layout": ["shared/components/src/index.ts"]
+      "@deliv-app/ui-layout": ["shared/components/src/index.ts"],
+      "@deliv-app/user-delivery-footer-feature": [
+        "libs/features/user-delivery-features/user-delivery-footer-feature/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

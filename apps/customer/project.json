@@ -22,7 +22,10 @@
             "input": "customer/public"
           }
         ],
-        "styles": ["customer/src/styles.scss"],
+        "styles": [
+          "customer/src/styles.scss",
+          "libs/shared/styles/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {

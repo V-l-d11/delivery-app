@@ -1,0 +1,12 @@
+// libs/shared/styles/_variables.scss
+
+//fonts
+@font-face {
+  font-family: Jost;
+  src: url(assets/fonts/Jost-VariableFont_wght.ttf) format('truetype');
+}
+$primary-font-family: Jost;
+$secondary-font-family: 'Sans-serif';
+
+//footer-styles
+$primary-footer-background: #efedea;

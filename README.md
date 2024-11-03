@@ -30,11 +30,15 @@
 
 ## Generate libraries
 
-- `npx nx g @nrwl/angular:library --name=example --directory=example/example --tags=scope:example,type:example `
+- `npx nx g @nrwl/angular:library --name=example --directory=example-path/example-path --tags=scope:example,type:example `
 
 # Generate components into libs
 
-- `npx nx g @nrwl/angular:component ui-h3 --verbose`
+- `npx nx g @nrwl/angular:component component-name-example --verbose`
+
+# Dlete librari
+
+- `nx g @nrwl/workspace:remove libs-name-example`
 
 ## Requirements
 
@@ -45,6 +49,10 @@
 #### Folders/Libs structure
 
 ```
+├── apps
+│   ├──admins
+│   ├──customer
+│   ├──owners
 ├── libs
 │   ├──features
 │   │   ├── admin-delivery-features
@@ -59,6 +67,9 @@
 │   │   ├── api-types-owners
 │   │   ├── api-types-customers
 │   │   ├── api-types-admins
+│   │   ├── api-types-base
+│   │   |   ├── api-base-models
+│   │   |   ├── api-base-services
 │   │   ├── error-handler
 │   ├── data-acess
 │   │   ├──http-client
@@ -75,5 +86,7 @@
 │   │   |   ├── ui-button
 │   │   |   ├── ui-icon
 |   |   ├── ui-layout
-
+│   │   |   ├── ui-nav-bar-delivery
+│   │   |   ├── ui-footer-delivery
+│   │   |   ├── ui-layout
 ```

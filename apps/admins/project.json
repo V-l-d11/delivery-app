@@ -22,7 +22,7 @@
             "input": "admins/public"
           }
         ],
-        "styles": ["admins/src/styles.scss"],
+        "styles": ["admins/src/styles.scss", "libs/shared/styles/styles.scss"],
         "scripts": []
       },
       "configurations": {

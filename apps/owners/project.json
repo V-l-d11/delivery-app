@@ -22,7 +22,7 @@
             "input": "owners/public"
           }
         ],
-        "styles": ["owners/src/styles.scss"],
+        "styles": ["owners/src/styles.scss", "libs/shared/styles/styles.scss"],
         "scripts": []
       },
       "configurations": {

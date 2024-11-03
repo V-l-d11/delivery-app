@@ -22,7 +22,7 @@
             "input": "users/public"
           }
         ],
-        "styles": ["users/src/styles.scss"],
+        "styles": ["users/src/styles.scss", "libs/shared/styles/styles.scss"],
         "scripts": []
       },
       "configurations": {
