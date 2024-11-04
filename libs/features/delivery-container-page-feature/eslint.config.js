@@ -20,7 +20,7 @@ module.exports = [
         'error',
         {
           type: 'element',
-          prefix: 'delivery',
+          prefix: 'lib',
           style: 'kebab-case',
         },
       ],

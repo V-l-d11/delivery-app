@@ -13,7 +13,7 @@ type SubColumn = {
 };
 
 @Component({
-  selector: 'lib-ui-footer-delivery',
+  selector: 'delivery-ui-footer',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './ui-footer-delivery.component.html',
