@@ -36,6 +36,10 @@
 
 - `npx nx g @nrwl/angular:component component-name-example --verbose`
 
+# Generate lib type:store
+
+- `npx nx g @nrwl/angular:lib user-store-delivery-home --directory=libs/store/store-delivery-user --tags=type:store,scope:store --no-component`
+
 # Dlete librari
 
 - `nx g @nrwl/workspace:remove libs-name-example`
@@ -59,6 +63,7 @@
 │   │   ├── customer-delivery-features
 │   │   ├── owner-delivery-features
 │   │   ├── user-delivery-features
+│   │   ├── delivery-container-page-features
 │   ├── auth
 │   │   ├── data-access
 │   │   ├── feature-auth
@@ -79,6 +84,9 @@
 |   |   ├── store-delivery-admin
 |   |   ├── store-delivery-customer
 │   ├── shared
+│   │   ├── interfaces
+│   │   |   ├── interfaces
+│   │   |   ├── mappers
 │   │   ├── components
 │   │   |   ├── ui-h1
 │   │   |   ├── ui-h2

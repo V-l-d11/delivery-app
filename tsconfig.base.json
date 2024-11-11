@@ -33,6 +33,10 @@
         "libs/features/delivery-container-page-feature/src/index.ts"
       ],
       "@deliv-app/error-handlers": ["libs/core/error-handlers/src/index.ts"],
+      "@deliv-app/interfaces": ["libs/shared/interfaces/src/index.ts"],
+      "@deliv-app/store-delivery-user-home": [
+        "libs/store/store-delivery-user/store-delivery-user-home/src/index.ts"
+      ],
       "@deliv-app/ui-components": ["shared/src/index.ts"],
       "@deliv-app/ui-layout": ["libs/shared/ui-layout/src/index.ts"],
       "@deliv-app/user-delivery-footer-feature": [
@@ -40,6 +44,9 @@
       ],
       "@deliv-app/user-delivery-home-page": [
         "libs/features/user-delivery-features/user-delivery-home-page-feature/src/index.ts"
+      ],
+      "@deliv-app/user-store-delivery-home": [
+        "libs/store/store-delivery-user/src/index.ts"
       ]
     }
   },
